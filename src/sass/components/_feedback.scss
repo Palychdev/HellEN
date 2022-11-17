@@ -1,0 +1,134 @@
+.feedback__title {
+	margin-bottom: 24px;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 1.3;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.feedback__main-img {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 24px;
+}
+
+.feedback__icon {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 24px;
+}
+
+.feedback__graduate-title {
+	text-align: center;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.08em;
+	margin-bottom: 16px;
+
+	color: $accent;
+
+}
+
+.feedback__graduate-description {
+	margin-bottom: 16px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.25;
+	text-align: center;
+	letter-spacing: 0.08em;
+
+	color: $secondary-txt;
+}
+
+.feedback__txt {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.67;
+	text-align: center;
+
+	color: $third-txt;
+
+	&--more {
+		color: $accent;
+		text-decoration: underline;
+	}
+}
+
+.feedback-slider {
+	position: relative;
+}
+
+.left-arrow {
+	position: absolute;
+	// display: block;
+	left: 0;
+	bottom: 50px;
+	height: 30px;
+}
+
+.right-arrow {
+	position: absolute;
+	// display: block;
+	right: 0;
+	bottom: 50px;
+	height: 30px;
+}
+
+.swiper-container {
+	padding-bottom: 124px;
+}
+
+.swiper-pagination-container {
+	display: block;
+	position: absolute;
+	width: 180px;
+	height: 74px;
+	left: 50%;
+	bottom: 30px;
+	transform: translateX(-50%);
+	overflow: hidden;
+	// outline: 1px solid red;
+}
+
+.swiper-pagination-bullet-active {
+	border: 3px solid $accent;
+}
+
+.swiper-pagination-bullet {
+	width: 54px;
+	height: 54px;
+	background-size: contain;
+	opacity: 1;
+
+	&:nth-child(1) {
+		background-image: url(../images/tonya-320-@3x.jpg);
+	}
+
+	&:nth-child(2) {
+		background-image: url(../images/feedback-1-@3x.jpg);
+	}
+
+	&:nth-child(3) {
+		background-image: url(../images/feedback-2-@3x.jpg);
+	}
+
+	&:nth-child(4) {
+		background-image: url(../images/feedback-3-@3x.jpg);
+	}
+
+	&:nth-child(5) {
+		background-image: url(../images/feedback-4-@3x.jpg);
+	}
+
+	&:nth-child(6) {
+		background-image: url(../images/feedback-5-@3x.jpg);
+	}
+
+	&:nth-child(7) {
+		background-image: url(../images/feedback-7-@3x.jpg);
+	}
+}

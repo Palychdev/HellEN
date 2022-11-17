@@ -1,0 +1,38 @@
+.footer__logo {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.footer__tel {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.footer__icon-tel {
+	margin-right: 8px;
+}
+
+.footer__icon-instagram {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+.footer__copy-right {
+	height: 80px;
+	background-color: $section-bg;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&-txt {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 2.0;
+		color: $secondary-txt;
+	}
+}
