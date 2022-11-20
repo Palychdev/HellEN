@@ -249,3 +249,23 @@
 	align-items: center;
 
 }
+
+.scroll-up-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  opacity: 0;
+  cursor: pointer;
+  position: fixed; 
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+	transition: opacity $cubic;
+	fill: $accent;
+	
+  background-color: transparent;
+  border: none;
+}
+
