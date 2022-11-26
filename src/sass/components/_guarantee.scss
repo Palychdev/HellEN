@@ -1,12 +1,39 @@
 .guarantee__title {
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 1.3;
+	letter-spacing: 0.03em;
 	text-align: center;
 	margin-bottom: 40px;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 46px;
+	}
 }
 
 .guarantee__bg {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background-color: $guarantee-bg;
+
+	@media screen and (min-width: $tablet) {
+		// width: 704px;
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+}
+
+.guarantee__list {
+	@media screen and (min-width: $tablet) {
+		display: block;
+		width: 560px;
+		margin-left: 87px;
+	}
+
+	@media screen and (min-width: $tablet) {
+		width: 1090px;
+		margin-left: 280px;
+	}
 }
 
 .guarantee__item {
@@ -15,6 +42,10 @@
 
 	&:not(:last-child) {
 		margin-bottom: 24px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		margin-left: 52px;
 	}
 
 	&::before {
@@ -27,6 +58,13 @@
 		background-image: url(../images/campfire.svg);
 		background-size: contain;
 		background-repeat: no-repeat;
+		// z-index: 1;
+
+		@media screen and (min-width: $desktop) {
+			width: 22px;
+			height: 30px;
+			left: -52px;
+		}
 	}
 
 	&:not(:last-child)::after {
@@ -40,9 +78,15 @@
 		background-image: url(../images/line-dashed.svg);
 		background-size: contain;
 		background-repeat: no-repeat;
+
+		@media screen and (min-width: $tablet) {
+			height: 60px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			left: -42px;
+		}
 	}
-
-
 }
 
 .guarantee__txt {
@@ -55,8 +99,17 @@
 	&--star {
 		color: $accent;
 	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 20px;
+		line-height: 1.4;
+	}
 }
 
 .guarantee {
 	margin-bottom: 40px;
+
+	@media screen and (min-width: $desktop) {
+		margin-bottom: 80px;
+	}
 }

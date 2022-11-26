@@ -8,6 +8,7 @@
 		opacity: 0;
 		pointer-events: none;
 	}
+
 	transition: opacity $cubic;
 }
 
@@ -19,8 +20,12 @@
 	width: 320px;
 	height: auto;
 	padding: 20px;
-	border-radius: 10px;
 	background-color: $accent;
+
+	@media screen and (min-width: $desktop) {
+		width: 500px;
+		height: 700px;
+	}
 }
 
 .modal__btn-close {
@@ -42,6 +47,17 @@
 	text-transform: uppercase;
 	font-size: 20px;
 	color: $primary-white;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 24px;
+	}
+}
+
+.modal__form-list {
+	@media screen and (min-width: $tablet) {
+		display: block;
+	}
+
 }
 
 .modal__form-field {
@@ -64,12 +80,20 @@
 	height: 35px;
 	padding-left: 40px;
 	border: 1px solid $accent;
+
+	@media screen and (min-width: $desktop) {
+		height: 50px;
+	}
 }
 
 .modal__form-field-select {
 	width: 100%;
 	height: 35px;
 	border: 1px solid $accent;
+
+	@media screen and (min-width: $desktop) {
+		height: 50px;
+	}
 }
 
 .modal__icon {
@@ -80,7 +104,15 @@
 
 .modal__form-button-send {
 	@extend %button;
+	font-size: 20px;
 	margin-bottom: 20px;
 	color: $primary-white;
 	border-color: $primary-white;
+	transition: color, bgcolor, $cubic;
+
+	&:hover,
+	&:focus {
+		color: $accent;
+		background-color: $primary-white;
+	}
 }

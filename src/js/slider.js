@@ -10,7 +10,9 @@ new Swiper('.swiper-container', {
 		type: 'bullets',
 		clickable: true,
 		dynamicBullets: true,
-		dynamicMainBullets: 3
+		dynamicMainBullets: 3,
+
+
 	},
 
 	loop: true,
@@ -18,3 +20,13 @@ new Swiper('.swiper-container', {
 	effect: 'coverflow',
 
 });
+
+// function dynBull() {
+// 	if (window.innerWidth > 768) {
+// 		dynamicBullets: false;
+// 	} else {
+// 		dynamicBullets: true;
+// 	}
+// }
+// window.addEventListener('changesize', dynBull);
+
