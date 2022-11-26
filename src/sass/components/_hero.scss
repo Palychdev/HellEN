@@ -4,6 +4,14 @@
 	font-size: 20px;
 	line-height: 1.30;
 	letter-spacing: 0.03em;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 26px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 58px;
+	}
 }
 
 .hero__txt {
@@ -25,6 +33,18 @@
 	&--second-accent {
 		color: $accent;
 	}
+
+	@media screen and (min-width: $tablet) {
+		margin-bottom: 48px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 20px;
+
+		&--first-accent {
+			font-size: 20px;
+		}
+	}
 }
 
 .hero__btn {
@@ -42,11 +62,24 @@
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	color: $primary-white;
-
-	outline: none;
-
-	border-color: transparent;
+	border: 2px solid $accent;
 	background-color: $accent;
+transition: color, bgcolor, $cubic;
+	@media screen and (min-width: $tablet) {
+		width: 260px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 354px;
+		height: 70px;
+		font-size: 14px;
+	}
+
+	&:hover,
+	&:focus {
+		color: $accent;
+		background-color: $primary-white;
+	}
 }
 
 .hero__img {
@@ -58,6 +91,37 @@
 	background-image: url(../images/hero-320-@3x.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
+
+	@media screen and (min-width: $tablet) {
+		width: 376px;
+		height: 322px;
+		margin-bottom: 80px;
+		background-image: url(../images/hero-768-@3x.jpg);
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 842px;
+		height: 719px;
+		margin-bottom: 45px;
+		margin-left: 246px;
+		background-image: url(../images/hero-1680-@3x.jpg);
+	}
+}
+
+.hero__flex {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+	}
+}
+
+.hero__flex-txt {
+	@media screen and (min-width: $tablet) {
+		width: 322px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 560px;
+	}
 }
 
 .hero__item {
@@ -68,7 +132,6 @@
 	}
 
 	@media screen and (min-width: $tablet) {
-
 		&:not(:last-child) {
 			margin-bottom: 0;
 		}
@@ -77,14 +140,31 @@
 			margin-right: 178px;
 		}
 	}
+
+	@media screen and (min-width: $desktop) {
+		&:not(:last-child) {
+			margin-right: 460px;
+		}
+	}
 }
 
 .hero__icon {
 	fill: $accent;
+
+	@media screen and (min-width: $desktop) {
+		width: 100px;
+		height: 102px;
+	}
 }
 
 .hero__icon-rect {
 	stroke: $accent;
+}
+
+.hero__icon-content {
+	@media screen and (min-width: $desktop) {
+		transform: translate(20px, 20px);
+	}
 }
 
 .hero__advantage-txt {
@@ -100,11 +180,18 @@
 	letter-spacing: 0.08em;
 
 	@media screen and (min-width: $desktop) {
-		left: 52px;
+		font-size: 20px;
+		width: 250px;
+		left: 80px;
+		top: 20px;
 	}
 
 }
 
 .hero {
 	margin-bottom: 40px;
+
+	@media screen and (min-width: $tablet) {
+		margin-bottom: 80px;
+	}
 }

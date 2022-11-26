@@ -1,25 +1,113 @@
+.container--outer__footer {
+	@media screen and (min-width: $tablet) {
+		// display: flex;
+		// justify-content: space-between;
+		// height: 125px;
+	}
+}
+
+.footer__flex {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		height: 125px;
+		justify-content: left;
+		align-items: center;
+	}
+
+	@media screen and (min-width: $desktop) {
+		height: 203px;
+	}
+}
+
 .footer__logo {
 	display: block;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
+
+	@media screen and (min-width: $tablet) {
+		margin-left: 0;
+		margin-right: 220px;
+		margin-bottom: 0;
+	}
+
+	@media screen and (min-width: $desktop) {
+		margin-right: 452px;
+	}
+}
+
+.footer__logo-icon {
+	@media screen and (min-width: $tablet) {
+		width: 128px;
+		height: 45px;
+	}
 }
 
 .footer__tel {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: 0.08em;
+	color: $primary-txt;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 20px;
+		margin-bottom: 0;
+
+		&::after {
+			content: '';
+			display: flex;
+			width: 2px;
+			height: 40px;
+			margin-left: 20px;
+			background-color: $secondary-txt;
+
+			@media screen and (min-width: $desktop) {
+				margin-left: 16px;
+			}
+		}
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 30px;
+	}
 }
 
 .footer__icon-tel {
 	margin-right: 8px;
+	fill: $accent;
+
+	@media screen and (min-width: $tablet) {
+		width: 24px;
+		height: 23px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 30px;
+		height: 29px;
+	}
 }
 
 .footer__icon-instagram {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 40px;
+	width: 40px;
+	height: 40px;
+
+	@media screen and (min-width: $tablet) {
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+	@media screen and (min-width: $desktop) {
+		margin-left: 24px;
+		margin-bottom: 0;
+	}
 }
 
 .footer__copy-right {

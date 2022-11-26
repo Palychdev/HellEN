@@ -4,6 +4,18 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: $section-bg;
+
+	@media screen and (min-width: $tablet) {
+		background-image: linear-gradient(to right, $overlay, $overlay),
+			url(../images/form-bg-768-@3x.jpg);
+		height: 459px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		background-image: linear-gradient(to right, $overlay, $overlay),
+			url(../images/form-bg-1680-@3x.jpg);
+		height: 794px;
+	}
 }
 
 .form__title {
@@ -19,19 +31,45 @@
 	&--accent {
 		color: $accent;
 	}
+
+	@media screen and (min-width: $tablet) {
+		font-size: 26px;
+		margin-bottom: 40px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 46px;
+	}
 }
 
 .form__txt {
 	margin-bottom: 40px;
 	font-weight: 600;
 	font-size: 12px;
-	line-height: 1.25;
+	line-height: 1.2;
 	text-align: center;
 	letter-spacing: 0.08em;
 	color: $primary-white;
 
 	&--accent {
 		color: $accent;
+	}
+
+	@media screen and (min-width: $tablet) {
+		font-size: 14px;
+		margin-bottom: 24px;
+		width: 452px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 1100px;
+		font-size: 30px;
+		margin-bottom: 60px;
 	}
 }
 
@@ -43,15 +81,43 @@
 	border: 1px solid $primary-white;
 	color: $primary-white;
 	outline: none;
+	font-size: 16px;
 
 	&:focus {
 		border-color: $accent;
+	}
+
+	@media screen and (min-width: $desktop) {
+		height: 70px;
+		font-size: 20px;
 	}
 }
 
 .form__group {
 	position: relative;
-	margin-bottom: 20px;
+
+	&:first-child {
+		margin-bottom: 20px;
+	}
+
+	&:last-child {
+		margin-bottom: 40px;
+	}
+
+	@media screen and (min-width: $tablet) {
+		width: 336px;
+		margin-left: auto;
+		margin-right: auto;
+
+		&:last-child {
+			margin-bottom: 32px;
+		}
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 528px;
+		// height: 70px;
+	}
 }
 
 .form__label {
@@ -70,13 +136,17 @@
 	.form__input:not(:placeholder-shown)~& {
 		opacity: 0;
 	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 20px;
+		top: 50%;
+	}
 }
 
 .form__btn {
-	display: inline-block;
+	display: block;
 	width: 100%;
 	height: 48px;
-	margin-top: 20px;
 	margin-bottom: 40px;
 	padding: 0;
 	background-color: $accent;
@@ -88,8 +158,24 @@
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	color: $primary-white;
+
+	@media screen and (min-width: $tablet) {
+		width: 336px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 528px;
+		height: 70px;
+		font-size: 14px;
+	}
 }
 
 .form {
 	margin-bottom: 40px;
+
+	@media screen and (min-width: $tablet) {
+		margin-bottom: 0;
+	}
 }

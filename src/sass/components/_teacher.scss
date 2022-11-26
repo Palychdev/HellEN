@@ -4,10 +4,41 @@
 	font-size: 20px;
 	line-height: 1.3;
 	letter-spacing: 0.03em;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 26px;
+		margin-bottom: 40px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 46px;
+		margin-bottom: 80px;
+	}
 }
 
 .teacher__img {
 	margin-bottom: 20px;
+
+	@media screen and (min-width: $desktop) {
+		width: 528px;
+	}
+}
+
+.teacher__flex {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+
+		&-item-txt {
+			width: 402px;
+			margin-left: 60px;
+
+			@media screen and (min-width: $desktop) {
+				width: 667px;
+				margin-left: 172px;
+			}
+		}
+	}
+
 }
 
 .teacher__name {
@@ -25,6 +56,16 @@
 		margin-top: 8px;
 		margin-bottom: 20px;
 		background-color: $underline;
+
+		@media screen and (min-width: $desktop) {
+			margin-top: 16px;
+			margin-bottom: 32px;
+		}
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 30px;
+		line-height: 1.23;
 	}
 }
 
@@ -33,7 +74,7 @@
 	margin-left: 27px;
 	font-weight: 600;
 	font-size: 14px;
-	line-height: 1.2;
+	line-height: 1.25;
 	letter-spacing: 0.06em;
 
 	&:not(:last-child) {
@@ -51,23 +92,45 @@
 		background-image: url(../images/check-mark.svg);
 		background-size: contain;
 		background-repeat: no-repeat;
+
+		@media screen and (min-width: $desktop) {
+			width: 25px;
+			height: 20px;
+			left: -60px;
+			top: 5px;
+		}
 	}
 
+	@media screen and (min-width: $tablet) {
+		font-size: 12px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 16px;
+		margin-left: 60px;
+
+		&:not(:last-child) {
+			margin-bottom: 32px;
+		}
+	}
 }
 
 .teacher__list {
 	margin-bottom: 60px;
+
+	@media screen and (min-width: $tablet) {
+		display: block;
+	}
 }
 
 .teacher__txt {
 	position: relative;
-	margin-bottom: 8px;
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 1.67;
 	color: $secondary-txt;
 
-	&::before {
+	&--before::before {
 		content: '';
 		position: absolute;
 		display: block;
@@ -75,6 +138,20 @@
 		height: 2px;
 		top: -25px;
 		background-color: $accent;
+	}
+
+	@media screen and (min-width: $tablet) {
+		font-size: 10px;
+		line-height: 2.0;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 18px;
+		line-height: 1.56;
+		margin-bottom: 24px;
+		&:last-child{
+			margin-bottom: 50px;
+		}
 	}
 }
 
@@ -85,6 +162,10 @@
 	text-decoration: underline;
 	color: $accent;
 
+	@media screen and (min-width: $desktop) {
+		font-size: 18px;
+		line-height: 1.56;
+	}
 }
 
 .teacher {
